@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .nav {
     display: flex;
     align-items: center;
@@ -129,5 +130,43 @@ body {
             color: #ffffffaa;
         }
 
+    }
+}
+
+.sec-onboarding {
+    .intro {
+        @extend .sec-features, .intro;
+    }
+
+    .steps {
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url("../assets/img/bg.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    .footer-cta {
+        width: 50%;    
+        
+        .cta-title {
+        font-size: 2rem;
+        }
+        
+        .cta-description {
+            font-size: 1.1rem;
+        }
     }
 }
